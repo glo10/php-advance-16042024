@@ -6,7 +6,7 @@
 
 1. A partir du diagramme de classes UML, ci-après, créez les classes correspondantes en PHP.
 
-![diag_class](./img/di.PNG)
+![diag_class](../img/diag_class_colis.png)
 
 ## Bonus
 
