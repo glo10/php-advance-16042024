@@ -8,17 +8,11 @@ class Customer extends CustomerAbstract {
     $this->creditCardNumber = $cbNumber;
   }
 
-  /**
-   * Get the value of creditCardNumber
-   */
   public function getCreditCardNumber(): string
   {
     return $this->creditCardNumber;
   }
 
-  /**
-   * Set the value of creditCardNumber
-   */
   public function setCreditCardNumber(string $creditCardNumber): self
   {
     $this->creditCardNumber = $creditCardNumber;
