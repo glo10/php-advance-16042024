@@ -1,10 +1,13 @@
 # Exercice 2 
 
-1. Créez un projet avec composer en installant les dépendances ci-dessous en respectant les environnements
-2. Dans le composer.json, ajoutez une clé nommée scripts et créez un script qui contient l'instruction `echo 'hello world'`. Lorsque ce script sera appelée depuis la commande `composer run CléDeMonScript`, le message `hello world`sera affiché dans la console.
-3. Exécutez le script depuis la console.
+## Enoncé
 
-## Dépendances globales (prod, dev et test)
+1. Créez un nouveau projet avec composer (utilisation de la commande `composer init`, attention soyez vigilant à l'endroit (dossier) ou vous allez exécuter cette commande, vous devez être à la racine de votre projet).
+2. Installez les dépendances ci-dessous en respectant les environnements mentionnées.
+3. Dans le composer.json, ajoutez une clé nommée *scripts* et créez un script qui contient l'instruction `echo 'hello world'`. Lorsque ce script sera appelée depuis la console (terminal) via la commande `composer run nomDeCleAssocieAMonScript`, le message `hello world` sera affiché dans la console.
+4. Exécutez le script pour obtenir 'hello world' depuis la console.
+
+## Dépendances globales cad sur tous les environnements (prod et dev)
 
 - monolog/monolog
 - psr/cache
@@ -12,9 +15,15 @@
 - twig/twig
 - symfony/mailer
 
-## Dépendances en développement (uniquement en dev et test)
+## Dépendances en développement (uniquement en dev)
 
 - phpunit
-- code coverage
-- vfstream
+- phpunit/php-code-coverage
+- mikey179/vfsstream
 - fakerphp/faker
+
+---
+
+## Exemple fichier composer
+
+![composer](./img/composer.PNG)
