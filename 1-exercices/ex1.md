@@ -2,13 +2,10 @@
 
 1. Implémentez le diagramme de classes ci-après en POO avec PHP et les nouveautés de PHP 8.
 2. Implémentez un ou plusieurs scénarios de cas d'utilisation en instanciant des objets par exemple :
-- Ajout d'un article
-- Ajout d'un client
-- Modification d'un article
-- Un client passe une commande de 3 articles
+- *Un client effectue une commande contenant plusieurs article*
 - Etc.
 
-**PS : vous avez le droit d'ajouter des nouvelles méthodes aux classes pour effectuer les scénarios précédents**
+**PS : vous avez le droit d'ajouter des nouvelles propriétés et/ou méthodes aux classes pour effectuer les scénarios précédents ou selon la pertinence (tout en restant proche des besoins)**
  
 [Source diagramme de classe manurmx](https://medium.com/@manurnx/le-diagramme-de-classes-2447602613f2)
 
