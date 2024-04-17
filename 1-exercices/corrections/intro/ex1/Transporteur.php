@@ -1,5 +1,5 @@
 <?php
-
+require_once '../ex1/Personne.php';
 class Transporteur extends Personne {
   private bool $estDisponible;
 

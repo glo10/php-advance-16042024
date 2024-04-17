@@ -9,7 +9,9 @@ class Gestionnaire extends Personne {
   }
 
   public function visualiserColis(Colis $colis) {
-    echo 'Je visualise un colis qui a un poids de '.$colis->getLongueur(). 'g<br>';
+    echo 'Je visualise un colis qui a les caractéristiques suivantes : <br>Longueur '
+    .$colis->getLongueur(). '<br>Largeur : '.$colis->getLongueur(). '<br>Poids : '.
+    $colis->getPoids();
   }
 
   public function visualiserHistorique() {

@@ -11,7 +11,6 @@
   <h1>Planifier iténaire</h1>
   <?php
     require_once 'menu.php';
-    require_once '../ex1/Personne.php';
     require_once '../ex1/Transporteur.php';
     require_once '../ex1/Colis.php';
     // UC un transporteur planifie une iténaire de livraison

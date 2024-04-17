@@ -11,7 +11,6 @@
   <h1>Scanner un colis</h1>
   <?php
     require_once 'menu.php';
-    require_once '../ex1/Personne.php';
     require_once '../ex1/Transporteur.php';
     require_once '../ex1/Colis.php';
 

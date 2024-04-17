@@ -9,7 +9,6 @@
   <h1>UC Envoyer un colis</h1>
   <?php
     require_once 'menu.php';
-    require_once '../ex1/Personne.php';
     require_once '../ex1/Expediteur.php';
     require_once '../ex1/Colis.php';
     // UC un expiditeur envoie un colis
