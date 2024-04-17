@@ -1,4 +1,23 @@
-# TP euro 2024
+# TP euro 2024 en binôme
+
+---
+
+## Spécifications techniques
+
+- Séparer les classes dans un dossier spécifiques
+- Séparer la ou les parties visuelles dans un autre dossier
+
+---
+
+## PARTIE 0 : POO
+
+1. A partir du diagramme de classes ci-dessous, créez les classes en PHP.
+2. Réalisez les scénarios de cas d'utilisation suivantes :
+- Tous les matchs du Groupe A, avec les scores pour chaque match et les stades (cf. le calendrier des matchs dans les screens ci-dessous).
+
+### Diagramme de classe
+
+![mld](./img/diag_class_euro.png)
 
 ---
 
@@ -7,9 +26,6 @@
 1. A partir du diagramme de classes ci-dessous et des annotations et commandes Doctrine, créez la base de données et les tables associées. **ATTENTION group est un mot reservé par SQL, il faut renommer la table à l'aide des annotations de Doctrine**
 2. Insérez les équipes et les groupes depuis les photos des poules de l'euro 2024 ci-dessous
 
-## Diagramme de classe
-
-![mld](./img/diag_class_euro.png)
 
 ## Données à inserer (répartition des équipes dans les groupes)
 
