@@ -9,6 +9,11 @@ class OrderLine {
     $this->article = $a;
   }
 
+  public function computePrice() {
+    // Le prix d'une ligne de commande = quantité voulue * prix unitaire de l'article choisi
+    $this->price = $this->qty * $this->article->getUnitPrice();
+  }
+  
   public function getQty(): int
   {
     return $this->qty;

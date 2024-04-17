@@ -6,12 +6,19 @@ class Order {
   private float $price;
   private array $orderLines;
   private CustomerAbstract $customer;
-  public function __construct(string $number, float $price, array $orderLines, CustomerAbstract $customer) {
+  public function __construct(string $number, array $orderLines, CustomerAbstract $customer) {
     $this->number = $number;
-    $this->price = $price;
     $this->orderLines = $orderLines;
     $this->createAt = new DateTime();
     $this->customer = $customer;
+  }
+
+  public function computeTotalPrice() {
+    $total = 0;
+    foreach($this->orderLines as $line) {
+      $total += $line->getPrice();
+    }
+    $this->setPrice($total); // idem que de faire $this->price = $price;
   }
   public function sold() : void {}
 
