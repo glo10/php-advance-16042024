@@ -1,0 +1,19 @@
+{
+    "name": "glodie/composer",
+    "description": "demo composer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Glodie\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Glodie Tshimini",
+            "email": "contact@tshimini.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
