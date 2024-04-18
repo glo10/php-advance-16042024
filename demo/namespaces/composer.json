@@ -1,0 +1,22 @@
+{
+    "name": "app/glodie",
+    "require": {
+        "twig/twig": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/",
+            "App\\Config\\" : "src/config/",
+            "App\\Views\\" : "src/views/",
+            "App\\Classes\\Front\\" : "src/classes/front/",
+            "App\\Classes\\" : "src/classes/",
+            "App\\Classes\\Admin\\" : "src/classes/admin/"
+        }
+    },
+    "authors": [
+        {
+            "name": "formateur-glodiee-tshimini",
+            "email": "contact@tshimini.fr"
+        }
+    ]
+}
