@@ -1,0 +1,21 @@
+{
+    "name": "glodie/ex3",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\Classes\\Archive\\": "src/classes/archive/",
+            "App\\Classes\\Office\\": "src/classes/office/",
+            "App\\Classes\\Others\\": "src/classes/others/",
+            "App\\Classes\\Service\\": "src/classes/service/",
+            "App\\Classes\\User\\": "src/classes/user/",
+            "App\\Interfaces\\": "src/interfaces/"
+        }
+    },
+    "authors": [
+        {
+            "name": "formateur-glodie-tshimini",
+            "email": "contact@tshimini.fr"
+        }
+    ],
+    "require": {}
+}
