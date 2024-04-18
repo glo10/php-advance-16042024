@@ -2,7 +2,7 @@
 
 1. Récupérez le [zip suivant](./ressources/ex3.zip)
 2. Refactorisez(modifiez) le projet en y ajoutant des espaces de noms et en respectant la norme [PSR-4](https://www.php-fig.org/psr/psr-4/)
-3. Créez un script permettant de créer une archive (autrement dit une page PHP qui crée un objet (instance) d'une archive et qui appelle la méthode *creer()*).
+3. Créez un script(fichier php) permettant de créer une archive(Classe Archive), autrement dit une page PHP qui crée un objet (instance) archive et qui appelle sa méthode *creer()*).
 
 ## Schéma UML des classes à refactoriser
 
