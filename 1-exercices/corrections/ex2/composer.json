@@ -1,0 +1,29 @@
+{
+    "name": "glodie/ex2",
+    "description": "Example of composer project",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^3.6",
+        "psr/cache": "^3.0",
+        "vlucas/phpdotenv": "^5.6",
+        "twig/twig": "^3.9",
+        "symfony/mailer": "^6.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpunit/php-code-coverage": "^10.1",
+        "mikey179/vfsstream": "^1.6",
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glodie\\Ex2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "formateur-glodiee-tshimini",
+            "email": "contact@tshimini.fr"
+        }
+    ]
+}
