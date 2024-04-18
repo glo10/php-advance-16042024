@@ -1,8 +1,8 @@
 # Exercice 3 : espace de nom
 
 1. Récupérez le [zip suivant](./ressources/ex3.zip)
-2. Refactorisez le projet en y ajoutant des espaces de noms et en respectant la norme [PSR-4](https://www.php-fig.org/psr/psr-4/)
-3. Créez un script qui instancie 2 à 3 objets de votre choix.
+2. Refactorisez(modifiez) le projet en y ajoutant des espaces de noms et en respectant la norme [PSR-4](https://www.php-fig.org/psr/psr-4/)
+3. Créez un script permettant de créer une archive (autrement dit une page PHP qui crée un objet (instance) d'une archive et qui appelle la méthode *creer()*).
 
 ## Schéma UML des classes à refactoriser
 
