@@ -3,6 +3,7 @@
     "description": "Doctrine init",
     "type": "project",
     "scripts": {
+        "c": "php bin/doctrine orm:schema-tool:create",
         "i": "php bin/console orm:info",
         "v": "php bin/doctrine orm:validate-schema",
         "d": "php bin/doctrine orm:schema-tool:update --dump-sql",
