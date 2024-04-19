@@ -1,0 +1,22 @@
+{
+    "name": "glodie/orm",
+    "type": "project",
+    "scripts": {
+        "d": "echo 'hello'"
+    },
+    "require": {
+        "doctrine/orm": "^3.1",
+        "symfony/cache": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glodie\\Orm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "formateur-glodiee-tshimini",
+            "email": "contact@tshimini.fr"
+        }
+    ]
+}
