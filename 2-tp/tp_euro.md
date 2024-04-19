@@ -11,9 +11,17 @@
 
 ## PARTIE 0 : POO
 
+### Jour 1 : création des classes
+
 1. A partir du diagramme de classes ci-dessous, créez les classes en PHP.
 2. Réalisez les scénarios de cas d'utilisation suivantes :
 - Tous les matchs du Groupe A, avec les scores pour chaque match et les stades (cf. le calendrier des matchs dans les screens ci-dessous).
+
+## Jour 2 : ajout de composer et des namespaces
+
+1. Initialisez un projet *composer*
+2. Mettez en place les *namespaces* 
+3. Bonus : Générez de manière aléatoire les scores (tout en restant réaliste pas de "147-0" lol) et Affichez le classement du groupe A en fonction des résultats des matchs
 
 ### Diagramme de classe
 

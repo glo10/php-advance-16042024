@@ -1,7 +1,7 @@
 <?php
 namespace App\Classes\Others;
 
-use AddRemoveInterface;
+use App\Interfaces\AddRemoveInterface;
 
 class Sector implements AddRemoveInterface {
   private int $id;

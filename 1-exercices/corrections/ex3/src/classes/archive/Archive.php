@@ -11,15 +11,15 @@ use App\Interfaces\UpdateInterface;
 use DateTime;
 
 /**
- * Les interfaces sont des contrats, à partir du moment ou une classe implémente une interface, elle doit remplir le contrat
+ * Les interfaces sont des contrats, à partir du moment où une classe implémente une interface, elle doit remplir le contrat
  * cad écrire les codes des méthodes définis dans l'interface
  * De plus, l'interface permet à une classe d'avoir des nouvelles fonctionnalités (méthodes) qu'elle pourra implémenter à sa manière
- * Une voiture, une personne et un ordinateur peuvent implémenter une même interface dont par exemple
- * le contrat est run(méthode sans corps), une personne pourra l'implémenter en marchant, une voiture en démarrant le moteur
+ * Une voiture, une personne et un ordinateur peuvent implémenter une même interface
+ * Par exemple, le contrat est run(méthode sans corps), une personne pourra l'implémenter en marchant, une voiture en démarrant le moteur
  * et un ordinateur en s'allumant
  */
 class Archive implements AddRemoveInterface, UpdateInterface, CreateFindInterface {
-  // Nouvelle notation PHP8 qui premet de déclarer directement les propriétés dans les paramètres du constructeur
+  // Nouvelle notation PHP8 qui premet de déclarer directement les propriétés dans les paramètres du constructeur avec l'encapsulation (private, protected, public)
   public function __construct(
     private int $id,
     private string $name,

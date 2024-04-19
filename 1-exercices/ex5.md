@@ -2,6 +2,14 @@
 
 ---
 
+## Ressources
+
+- [Les types Doctrine](https://www.doctrine-project.org/projects/doctrine-dbal/en/4.0/reference/types.html)
+- [Les annotations Doctrine](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/annotations-reference.html)
+- [Gestion de l'héritage, documentation à lire, arrêtez-vous avant le chapitre sur les Overrides](https://www.doctrine-project.org/projects/doctrine-orm/en/3.1/reference/inheritance-mapping.html)
+
+---
+
 ## Aide mise en place
 
 1. Vous devez au préalable initialiser un nouveau projet avec `composer` et installer les packages `doctrine/orm` et `symfony/cache`
@@ -17,9 +25,7 @@
 
 1. Mettez en place vos namespaces.
 Pensez à chaque fois à exécuter la commande `composer dump-autoload` pour mettre à jour votre autoloader (vendor/autoload.php) après chaque modification du fichier composer.php dans la partie autoload PSR-4.
-2. A partir du diagramme de classes UML ci-dessous et de vos classes PHP de l'exercice 1, utilisez les annotations Doctrine sur les propriétés de vos classes PHP et commandes Doctrine pour créer les tables dans votre base de données.***ATTENTION, POUR LE MOMENT, NOUS ALLONS IGNORER LES 3 CLASSES AVEC L'HERITAGE, AUTREMENT DIT N'AJOUTEZ PAS LE MAPPING SUR CES 3 TABLES, NOUS REVIENDRONS DESSUS PLUS TARD.***
-
-<!-- ***Attention pour l'héritage plusieurs solutions sont possibles, veuillez lire la documention suivante de [Doctrine sur l'héritage](https://www.doctrine-project.org/projects/doctrine-orm/en/3.1/reference/inheritance-mapping.html)*** -->
+2. A partir du diagramme de classes UML ci-dessous et de vos classes PHP de l'exercice 1, utilisez les annotations Doctrine sur les propriétés de vos classes PHP et commandes Doctrine pour créer les tables dans votre base de données.
 
 ### Exemple de l'arborescence finale
 

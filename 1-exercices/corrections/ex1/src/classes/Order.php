@@ -6,9 +6,8 @@ class Order {
   private float $price;
   private array $orderLines;
   private CustomerAbstract $customer;
-  public function __construct(string $number, array $orderLines, CustomerAbstract $customer) {
+  public function __construct(string $number, CustomerAbstract $customer) {
     $this->number = $number;
-    $this->orderLines = $orderLines;
     $this->createAt = new DateTime();
     $this->customer = $customer;
   }
@@ -20,6 +19,13 @@ class Order {
     }
     $this->setPrice($total); // idem que de faire $this->price = $price;
   }
+
+  public function sortOrderLines() {
+    usort($this->orderLines, function($currentLine, $nextLine) {
+      return $currentLine->getPrice() < $nextLine->getPrice();
+    });
+  }
+
   public function sold() : void {}
 
   public function getCreateAt(): DateTime
@@ -66,7 +72,7 @@ class Order {
   public function setOrderLines(array $orderLines): self
   {
     $this->orderLines = $orderLines;
-
+    $this->sortOrderLines();
     return $this;
   }
 

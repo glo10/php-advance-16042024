@@ -11,7 +11,14 @@ use App\Classes\User\User;
  * @see https://www.php.net/manual/fr/language.constants.magic.php
  */
 require_once dirname(__DIR__).'/../vendor/autoload.php';
-
+/**
+ * Pour obtenir le chemin absolue d'un fichier ou d'un dossier, vous pouvez vous appuyer sur l'une des 3,
+ * En fonction du résultat,
+ * choisissez celui qui convient le mieux pour atteindre votre objectif (charger le fichier que l'on souhaite)
+ */
+var_dump(__DIR__);
+var_dump(dirname(__FILE__));
+var_dump(dirname(__DIR__));
 $archive = new Archive(
   1,
   'Archive 1',
