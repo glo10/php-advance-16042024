@@ -21,7 +21,7 @@
 
 1. Initialisez un projet *composer*
 2. Mettez en place les *namespaces* 
-3. Bonus : Générez de manière aléatoire les scores (tout en restant réaliste pas de "147-0" lol) et Affichez le classement du groupe A en fonction des résultats des matchs
+<!-- 3. Bonus : Générez de manière aléatoire les scores (tout en restant réaliste pas de "147-0" lol) et Affichez le classement du groupe A en fonction des résultats des matchs -->
 
 ### Diagramme de classe
 
