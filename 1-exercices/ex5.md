@@ -6,6 +6,7 @@
 
 - [Les types Doctrine](https://www.doctrine-project.org/projects/doctrine-dbal/en/4.0/reference/types.html)
 - [Les annotations Doctrine](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/annotations-reference.html)
+- [Annotations pour les relations entre les tables](https://www.doctrine-project.org/projects/doctrine-orm/en/3.1/reference/association-mapping.html)
 - [Gestion de l'héritage, documentation à lire, arrêtez-vous avant le chapitre sur les Overrides](https://www.doctrine-project.org/projects/doctrine-orm/en/3.1/reference/inheritance-mapping.html)
 
 ---
