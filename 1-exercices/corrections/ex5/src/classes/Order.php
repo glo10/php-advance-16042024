@@ -36,12 +36,6 @@ class Order {
     $this->setPrice($total); // idem que de faire $this->price = $price;
   }
 
-  public function sortOrderLines() {
-    usort($this->orderLines, function($currentLine, $nextLine) {
-      return $currentLine->getPrice() < $nextLine->getPrice();
-    });
-  }
-
   public function sold() : void {}
 
   public function getCreateAt(): DateTime
@@ -52,7 +46,6 @@ class Order {
   public function setCreateAt(DateTime $createAt): self
   {
     $this->createAt = $createAt;
-
     return $this;
   }
 
@@ -64,7 +57,6 @@ class Order {
   public function setNumber(string $number): self
   {
     $this->number = $number;
-
     return $this;
   }
 
@@ -76,19 +68,6 @@ class Order {
   public function setPrice(float $price): self
   {
     $this->price = $price;
-
-    return $this;
-  }
-
-  public function getOrderLines(): array
-  {
-    return $this->orderLines;
-  }
-
-  public function setOrderLines(array $orderLines): self
-  {
-    $this->orderLines = $orderLines;
-    $this->sortOrderLines();
     return $this;
   }
 
@@ -100,7 +79,17 @@ class Order {
   public function setCustomer(CustomerAbstract $customer): self
   {
     $this->customer = $customer;
+    return $this;
+  }
 
+  public function getLines(): Collection
+  {
+    return $this->lines;
+  }
+
+  public function setLines(Collection $lines): self
+  {
+    $this->lines = $lines;
     return $this;
   }
 }

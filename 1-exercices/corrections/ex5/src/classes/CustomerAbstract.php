@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\InheritanceType('JOINED')] // stratégie pour l'héritage ici une table pour chaque entité
 #[ORM\DiscriminatorColumn(name : 'kind', type : Types::STRING)] // colonne supplémentaire pour différencier le type de client
 #[ORM\DiscriminatorMap(array(
-  'b2c' => Customer::class,
+  'b2c' => Customer::class, // Customer::class vaut App\Classes\Customer en gros le nom de la classe avec son namespace
   'b2b' => Company::class
 ))] // les valeurs possibles (dépend du nombre de classes filles, ici 2)
 abstract class CustomerAbstract {
