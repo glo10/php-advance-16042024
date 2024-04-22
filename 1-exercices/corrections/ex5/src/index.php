@@ -32,7 +32,7 @@ $entityManager->flush();
 
 //-------------------------------------------------
 
-// Objectifs : récupérer les articles et les clients depuis la BDD
+// Objectif : récupérer les articles depuis la BDD
 // Entité = Classes métiers = Les objets manipulées par le domaine d'activité
 // A partir de l'EntityManager et de la méthode getRepository qui prend en paramètre le nom
 // de la classe ciblée
@@ -44,22 +44,21 @@ $articles = $articleRepository->findAll(); // idem que sans WHERE, tous les arti
 // 2. la méthode findBy([]) : prend en paramètre un tableau associatif contenant une clé et une valeur
 $articles1 = $articleRepository->findBy(['name' => 'Article 1']); // idem que WHERE name = "Article 1"
 // var_dump($articles1);
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Articles</title>
 </head>
 <body>
   <h1>Affichage des articles</h1>
     <ul>
       <?php foreach($articles as $article) : ?>
         <li>
-          <?php echo $article->getName(); ?>
+          <?php echo $article->getName().' : '. $article->getUnitPrice(). ' €'; ?>
           <button>Acheter</button>
         </li>
       <?php endforeach; ?>
