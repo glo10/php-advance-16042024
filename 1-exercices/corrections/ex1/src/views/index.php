@@ -18,7 +18,7 @@
   $teeShirt->setName('T-shirt');
   $pant = new Article(250, 24.99);
   $pant->setName('Pantalon');
-  $shoes = new Article(10, 49.99);
+  $shoes = new Article(10, 99.99);
   $shoes->setName('Chaussures');
   // 2. Création d'un client
   $glodie = new Customer('Glodie Tshimini', 'Paris', '123456789988');
@@ -30,16 +30,18 @@
   $threePants->computePrice();
   $oneShoe = new OrderLine(1, $shoes);
   $oneShoe->computePrice();
-  // 4. Création de la commande
+  // 4. Création de la commande et lien avec le client
   $order = new Order(
     uniqid('CMD-'),
-    array($twoTShirt, $threePants, $oneShoe),
     $glodie
   );
+  $order->setOrderLines(array($twoTShirt, $threePants, $oneShoe));
   // 5. Calcul du prix total des articles présent dans la commande
   $order->computeTotalPrice();
   var_dump($order);
-  // 6. Faire le lien entre la commande et le client
+  // Suppression d'une commande
+  unset($order);
+  // Respecter la composition (suppression de la commande entraine la suppression des lignes de commande de cette commande)
   ?>
 </body>
 </html>

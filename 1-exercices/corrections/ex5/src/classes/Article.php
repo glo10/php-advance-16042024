@@ -8,7 +8,7 @@ class Article {
   #[ORM\GeneratedValue()]
   #[ORM\Column(type: 'integer')]
   private int $id;
-  #[ORM\Column(type: 'string')]
+  #[ORM\Column(type: 'string', nullable: true)]
   private string $name;
   #[ORM\Column(type: 'integer')]
   private int $qty;

@@ -18,7 +18,7 @@ $connection = DriverManager::getConnection(
     'driver'    => 'pdo_mysql',
     'user'      => 'root',
     'password'  => '',
-    'dbname'    => 'ex5',
+    'dbname'    => 'demo_entity_manager',
     'port'      => 3308
   ],
   $config
