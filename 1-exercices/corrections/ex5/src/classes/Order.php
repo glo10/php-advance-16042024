@@ -18,9 +18,9 @@ class Order {
   private string $number;
   #[ORM\Column(type: 'float')]
   private float $price;
-  #[ORM\OneToMany(targetEntity: OrderLine::class, mappedBy:'order')]
+  #[ORM\OneToMany(targetEntity: OrderLine::class, mappedBy:'order')] // 1 commande possède plusieurs lignes de commande
   private Collection $lines;
-  #[ORM\ManyToOne(targetEntity: CustomerAbstract::class, inversedBy: 'orders')]
+  #[ORM\ManyToOne(targetEntity: CustomerAbstract::class, inversedBy: 'orders')] // Plusieurs commandes sont affectées à un client
   private CustomerAbstract $customer;
   public function __construct(string $number, CustomerAbstract $customer) {
     $this->number = $number;

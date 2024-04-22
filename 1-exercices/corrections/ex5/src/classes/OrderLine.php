@@ -11,9 +11,9 @@ class OrderLine {
   private int $qty;
   #[ORM\Column(type: 'float')]
   private float $price;
-  #[ORM\OneToOne(targetEntity:Article::class)]
+  #[ORM\ManyToOne(targetEntity:Article::class)] // Plusieurs lignes de commande contiennent un seul Article
   private Article $article;
-  #[ORM\ManyToOne(targetEntity: Order::class, inversedBy: 'lines')]
+  #[ORM\ManyToOne(targetEntity: Order::class, inversedBy: 'lines')] // Plusieurs lignes de commande sont rattachées à une commande
   private Order $order;
   public function __construct(int $q, Article $a) {
     $this->qty = $q;
@@ -33,7 +33,6 @@ class OrderLine {
   public function setQty(int $qty): self
   {
     $this->qty = $qty;
-
     return $this;
   }
 
@@ -45,7 +44,6 @@ class OrderLine {
   public function setPrice(float $price): self
   {
     $this->price = $price;
-
     return $this;
   }
 
@@ -57,7 +55,17 @@ class OrderLine {
   public function setArticle(Article $article): self
   {
     $this->article = $article;
+    return $this;
+  }
 
+  public function getOrder(): Order
+  {
+    return $this->order;
+  }
+
+  public function setOrder(Order $order): self
+  {
+    $this->order = $order;
     return $this;
   }
 }
