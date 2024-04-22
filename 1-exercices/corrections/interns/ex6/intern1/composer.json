@@ -1,0 +1,27 @@
+{
+    "name": "glodie/ex5",
+    "description": "Doctrine init",
+    "type": "project",
+    "scripts": {
+        "c": "php bin/doctrine orm:schema-tool:create",
+        "inf": "php bin/doctrine orm:info",
+        "v": "php bin/doctrine orm:validate-schema",
+        "d": "php bin/doctrine orm:schema-tool:update --dump-sql",
+        "upd": "php bin/doctrine orm:schema-tool:update --force"
+    },
+    "require": {
+        "doctrine/orm": "^3.1",
+        "symfony/cache": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Classes\\": "src/classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "formateur-glodiee-tshimini",
+            "email": "contact@tshimini.fr"
+        }
+    ]
+}
