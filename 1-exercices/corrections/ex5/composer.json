@@ -4,10 +4,10 @@
     "type": "project",
     "scripts": {
         "c": "php bin/doctrine orm:schema-tool:create",
-        "i": "php bin/console orm:info",
+        "inf": "php bin/doctrine orm:info",
         "v": "php bin/doctrine orm:validate-schema",
         "d": "php bin/doctrine orm:schema-tool:update --dump-sql",
-        "u": "php bin/doctrine orm:schema-tool:update --force"
+        "upd": "php bin/doctrine orm:schema-tool:update --force"
     },
     "require": {
         "doctrine/orm": "^3.1",

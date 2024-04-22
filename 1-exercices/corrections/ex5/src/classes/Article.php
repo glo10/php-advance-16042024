@@ -27,7 +27,6 @@ class Article {
   public function setName(string $name): self
   {
     $this->name = $name;
-
     return $this;
   }
 
@@ -39,7 +38,6 @@ class Article {
   public function setQty(int $qty): self
   {
     $this->qty = $qty;
-
     return $this;
   }
 
@@ -51,19 +49,6 @@ class Article {
   public function setUnitPrice(float $unitPrice): self
   {
     $this->unitPrice = $unitPrice;
-
-    return $this;
-  }
-
-  public function getLines(): array
-  {
-    return $this->lines;
-  }
-
-  public function setLines(array $lines): self
-  {
-    $this->lines = $lines;
-
     return $this;
   }
 }

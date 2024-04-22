@@ -9,8 +9,8 @@
       "request": "launch",
       "reAttach": true,
       "name": "app.local",
-      "url": "http://app.local/1-php-poo-avance-16042024/",
-      "webRoot": "${workspaceFolder}"
+      "url": "http://app.local/1-php-poo-avance-16042024/1-exercices/corrections/ex6-mvc/src/",
+      "webRoot": "${workspaceFolder}/1-exercices/corrections/ex6-mvc/src/",
     },
     {
       "name": "Listen for Xdebug",
@@ -43,7 +43,7 @@
         "-S",
         "localhost:7000",
         "-t",
-        "demo.v0/mvc/src"
+        "${workspaceFolder}/1-exercices/corrections/ex9-advance/src/api/articles/"
       ],
       "program": "",
       "cwd": "${workspaceRoot}",

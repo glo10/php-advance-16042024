@@ -2,7 +2,9 @@
     "name": "glodie/orm",
     "type": "project",
     "scripts": {
-        "d": "echo 'hello'"
+        "valid": "php bin/doctrine orm:validate-schema",
+        "dump": "php bin/doctrine orm:schema-tool:update --dump-sql",
+        "update": "php bin/doctrine orm:schema-tool:update --force"
     },
     "require": {
         "doctrine/orm": "^3.1",
