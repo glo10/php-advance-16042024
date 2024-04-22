@@ -1,5 +1,9 @@
 # Exercice 6 : Doctrine EntityManager
 
+## Préambule
+
+- Partir de vos classes ou de la correction de l'exercice 5
+
 ## Enoncé
 
 1. Insérez les articles, clients et des commandes. 3 fichiers PHP distincts pour chaque entité (objet métier tel que des articles, clients, commandes, etc. dans notre contexte).
