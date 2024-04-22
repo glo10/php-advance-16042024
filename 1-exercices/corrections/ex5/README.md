@@ -27,3 +27,7 @@
 ## Schéma relationnel
 
 ![schema](./images/schema.png)
+
+## Stratégies héritage en BDD
+
+![heritage](./images/strategie_heritage.png)
