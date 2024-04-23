@@ -7,7 +7,7 @@
 ## Fonctions dont vous aurez besoin
 
 - [file_get_contents()](https://www.php.net/manual/en/function.file-get-contents.php)
-- [json_encode()](https://www.php.net/manual/en/function.json-encode)
+- [json_decode()](https://www.php.net/manual/en/function.json-decode.php)
 
 ## Ressources
 <!--
