@@ -13,7 +13,7 @@
 <!--
 - [API GitHub pour récupérer des utilisateurs](https://api.github.com/users)
 -->
-- [Base URL OpenFoodFact pour récupérer les informations sur un produit  https://fr.openfoodfacts.org/api/v0/produit/{id}.json](https://fr.openfoodfacts.org/) en remplaçant id pour l'id du produit.
+- Base URI OpenFoodFact pour récupérer les informations sur un produit  https://fr.openfoodfacts.org/api/v0/produit/{id}.json en remplaçant {id} pour l'id du produit.
 
 ## Enoncé
 <!--
