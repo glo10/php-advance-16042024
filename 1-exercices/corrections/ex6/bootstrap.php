@@ -9,13 +9,13 @@ use Doctrine\ORM\ORMSetup;
 
 // Create a simple "default" Doctrine ORM configuration for Attributes
 $config = ORMSetup::createAttributeMetadataConfiguration(
-    paths: array(__DIR__."/src/classes"),
-    isDevMode: true,
+  paths: array(__DIR__ . "/src/classes"),
+  isDevMode: true,
 );
 
 // configuring the database connection
 $connection = DriverManager::getConnection(
-[
+  [
     'driver'    => DB_DRIVER,
     'user'      => DB_USER,
     'password'  => DB_PASSWORD,
