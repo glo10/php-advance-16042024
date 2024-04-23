@@ -5,7 +5,6 @@ $dataString = file_get_contents('https://jsonplaceholder.typicode.com/photos'); 
 $dataJson = json_decode($dataString, true); // Transforme du JSON (string) en PHP (Généralement dans le sens de communication du client (votre application) vers le serveur(application distante qui fournit les ressources))
 $userLocale = json_decode(file_get_contents(__DIR__.'/user.json')); // depuis une ressource locale
 var_dump($userLocale);
-// fonction json_encode : transforme du PHP en JSON (Du serveur (votre application) vers le Client(applications consommatrices de vos services))
 ?>
 <!DOCTYPE html>
 <html lang="en">
