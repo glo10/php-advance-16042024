@@ -33,7 +33,7 @@
 
 1. A partir du diagramme de classes ci-dessous et des annotations et commandes Doctrine, créez la base de données et les tables associées. **ATTENTION group est un mot reservé par SQL, il faut renommer la table à l'aide des annotations de Doctrine**
 2. Insérez les équipes et les groupes depuis les photos des poules de l'euro 2024 ci-dessous
-
+3. Effectuez (insérez) les matchs du groupe A avec des scores aléatoires
 
 ## Données à inserer (répartition des équipes dans les groupes)
 
