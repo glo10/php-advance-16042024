@@ -2,6 +2,7 @@
     "name": "glodie/ex6",
     "type": "project",
     "scripts": {
+        "a": "composer dump-autoload",
         "c": "php bin/doctrine orm:schema-tool:create",
         "inf": "php bin/doctrine orm:info",
         "v": "php bin/doctrine orm:validate-schema",

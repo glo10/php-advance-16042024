@@ -11,10 +11,11 @@ $userRepo = $entityManager->getRepository(Customer::class);
 // Récupération des articles et d'un utilisateur
 $item1 = $articleRepo->findOneBy(['id' => 1]);
 $item2 = $articleRepo->findOneBy(['id' => 2]);
-$client = $userRepo->findOneBy(['id' => rand(1,4)]);
+// Attention ici il faut avoir des utilisateurs avec les ids ci-après avec le rand, sinon erreur, car l'utilisateur n'existe pas
+$client = $userRepo->findOneBy(['id' => rand(1,2)]);
 // Création des lignes de commande avec calcul de prix
-$line1 = new OrderLine(4, $item1);
-$line2 = new OrderLine(3, $item2);
+$line1 = new OrderLine(rand(1,10), $item1);
+$line2 = new OrderLine(rand(1,10), $item2);
 $line1->computePrice();
 $line2->computePrice();
 // Création de la commande
