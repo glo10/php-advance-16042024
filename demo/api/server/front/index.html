@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande des infos depuis API PHP</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .loader {
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      /* Safari */
+      animation: spin 2s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Client Web ici JS, demande depuis API PHP</h1>
+  <div class="loader"></div>
+  <script>
+    // avec setTimeout volontairement on va attendre 3 secs avant de faire une requête vers PHP
+    setTimeout(function () {
+      // Une requête vers mon API en PHP qui tourne sur back/index.php
+      // Une fois qu'on obtient la réponse de l'API, on affiche les résultats
+      fetch('http://app.local/1-php-poo-avance-16042024/demo/api/server/back/index.php') // URL A MODIFIER par le votre en local
+        // réponse en JSON que JS va transformer en objet JavaScript
+        // grâce à la fonction json() (Côté PHP cette fonction similaire est json_decode())
+        .then(res => res.json())
+        .then(users => {// ici users est un tableau d'objets JS
+          console.log('users', users)
+          const ul = document.createElement('ul') // création d'un ul
+          users.forEach(user => { // parcours de tous users fournis par l'API PHP
+            const li = document.createElement('li') // création d'un li
+            li.innerText = user.name + ' ' + user.email // ajout du contenu textuelle nom et email entre les balises li
+            ul.append(li) // ajout du li dans le ul
+          })
+          document.querySelector('div').classList.remove('loader') // suppression de la classe loader de la div
+          document.body.append(ul) // ajout du ul dans le body
+        })
+        .catch(error => console.log('error', error)) // cas d'erreur
+    }, 3000)
+  </script>
+</body>
+
+</html>
