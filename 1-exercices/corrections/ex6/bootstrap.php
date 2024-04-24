@@ -1,5 +1,5 @@
 <?php
-require_once 'src/config/parameters.php';
+require_once 'config/parameters.php';
 require_once "vendor/autoload.php";
 
 use Doctrine\DBAL\DriverManager;

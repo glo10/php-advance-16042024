@@ -31,13 +31,19 @@ $pages = [
 <body class="container-fluid">
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <ul class="navbar-nav p-2">
-    <?php foreach($pages as $link => $name) : ?>
+    <?php 
+      // <?= idem que <?php echo
+      foreach($pages as $link => $name) : ?>
       <li class="nav-item h6">
         <a class="nav-link" href="<?= 'views/'.$link; ?>">
           <?= $name; ?>
         </a>
       </li>
     <?php endforeach; ?>
+
+    <?php foreach($pages as $link => $name) {
+      echo '<li class="nav-item h6"><a class="nav-link" href="\'views/'.$link.'">'.$name.'</a></li>';
+    }?>
   </ul>
 </nav>
 </body>
